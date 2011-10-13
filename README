@@ -1,0 +1,19 @@
+LICENSE: BSD   http://www.opensource.org/licenses/BSD-2-Clause
+
+-Kurt Schwehr 2011-Oct-13
+
+Things to do:
+
+* Does the code properly match shots to waveforms?
+* 99.99 must be the value for no bottom detect
+* caf splitter... pull apart a caf into one file per cbf
+* create a database from caf/cbf's
+  - Index into the binary file so accessing the waveforms is easy
+* cab to kml
+  - line mode.  Break into cbf sections
+  - thumbtack / placemark mode
+  - stacked waveform mode
+* be able to dump specific waveforms into other forms
+  - matlab m file
+  - python file with plotting code
+
