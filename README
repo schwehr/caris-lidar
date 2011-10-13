@@ -17,3 +17,13 @@ Things to do:
   - matlab m file
   - python file with plotting code
 
+
+Description:
+
+The CARIS Lidar format is fundamentaly broken.  The wave form does not
+appear to have units and mixes the signals from each of the lasers.  After
+writing a decoder for this format, I suggest you avoid using this format
+if at all possible.
+
+Lidar data comes as two files.  A CAF ascii file containing shot
+header information.  The CBF binary file contains one waveform per shot.
