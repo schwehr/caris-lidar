@@ -1,3 +1,7 @@
+This software only supports the caris-lads-lidar format and is not
+associated with Caris or LADS.  Both are probably much farther along
+in their lidar work.
+
 LICENSE: BSD   http://www.opensource.org/licenses/BSD-2-Clause
 
 -Kurt Schwehr 2011-Oct-13
@@ -16,6 +20,7 @@ Things to do:
 * be able to dump specific waveforms into other forms
   - matlab m file
   - python file with plotting code
+* testing, testing, testing.  Without testing, don't trust this library.
 
 
 Description:
@@ -25,5 +30,6 @@ appear to have units and mixes the signals from each of the lasers.  After
 writing a decoder for this format, I suggest you avoid using this format
 if at all possible.
 
-Lidar data comes as two files.  A CAF ascii file containing shot
-header information.  The CBF binary file contains one waveform per shot.
+Caris-LADS-Lidar formatted data comes as two files.  A CAF ascii file
+containing shot header information.  The CBF binary file contains one
+waveform per shot.
