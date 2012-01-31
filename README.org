@@ -1,29 +1,32 @@
+* Introduction
+
 This software only supports the caris-lads-lidar format and is not
 associated with Caris or LADS.  Both are probably much farther along
 in their lidar work.
+
+* License
 
 LICENSE: BSD   http://www.opensource.org/licenses/BSD-2-Clause
 
 -Kurt Schwehr 2011-Oct-13
 
-Things to do:
+* Things to do
 
-* Does the code properly match shots to waveforms?
-* 99.99 must be the value for no bottom detect
-* caf splitter... pull apart a caf into one file per cbf
-* create a database from caf/cbf's
+- Does the code properly match shots to waveforms?
+- 99.99 must be the value for no bottom detect
+- caf splitter... pull apart a caf into one file per cbf
+- create a database from caf/cbf's
   - Index into the binary file so accessing the waveforms is easy
-* cab to kml
+- cab to kml
   - line mode.  Break into cbf sections
   - thumbtack / placemark mode
   - stacked waveform mode
-* be able to dump specific waveforms into other forms
+- be able to dump specific waveforms into other forms
   - matlab m file
   - python file with plotting code
-* testing, testing, testing.  Without testing, don't trust this library.
+- testing, testing, testing.  Without testing, don't trust this library.
 
-
-Description:
+* Description:
 
 The CARIS Lidar format is fundamentaly broken.  The wave form does not
 appear to have units and mixes the signals from each of the lasers.  After
